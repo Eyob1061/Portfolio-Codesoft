@@ -1,0 +1,372 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f7f9fc;
+    color: #333;
+}
+
+.log-image {
+    width: 80px; 
+    height: auto; 
+    display: inline-block; 
+    margin-right: 1rem; 
+}
+
+
+header {
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1.2s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+}
+
+section {
+    padding: 3rem 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #4e54c8;
+    font-size: 2rem;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background: #8f94fb;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+#skills-level {
+    padding: 3rem 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+#skills-level h2 {
+    text-align: center;
+    color: #4e54c8;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+#skills-level h2::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background: #8f94fb;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.skill {
+    margin-bottom: 1.5rem;
+}
+
+.skill-name {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 20px;
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    transition: width 1s ease;
+}
+
+.html {
+    background: #ff5722;
+    width: 90%; 
+}
+
+.css {
+    background: #2196f3;
+    width: 85%; 
+}
+
+.js {
+    background: #ffeb3b;
+    width: 80%; 
+}
+
+.react {
+    background: #61dafb;
+    width: 75%; 
+}
+
+.python {
+    background: #4b8b3b;
+    width: 70%; 
+}
+
+@media (max-width: 768px) {
+    #skills-level {
+        padding: 2rem 1rem;
+    }
+
+    .progress-bar {
+        height: 8px;
+    }
+}
+
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 1rem; 
+}
+
+.about-content img {
+    width: 180px;
+    height: 180px;
+    border-radius: 30%;
+    margin-bottom: 1rem;
+    border: 5px solid #8f94fb;
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+ul li {
+    padding: 0.7rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #4e54c8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+    
+}
+
+
+.project {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project h3 {
+    margin-bottom: 0.5rem;
+    color: #4e54c8;
+}
+
+#resume a {
+    color: #4e54c8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#resume a:hover {
+    color: #8f94fb;
+    text-decoration: underline;
+}
+
+
+#contact p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#contact p a {
+    color: #4e54c8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#contact p a:hover {
+    color: #8f94fb;
+}
+
+footer {
+    background: #4e54c8;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons a {
+    color: #c9c9ce;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #8f94fb;
+    transform: scale(1.2);
+}
+
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4e54c8;
+    padding: 1rem 2rem;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #8f94fb;
+}
+
+.navbar .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #4e54c8;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 1rem 0;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .menu-toggle {
+        display: flex;
+    }
+}
+

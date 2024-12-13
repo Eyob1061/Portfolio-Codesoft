@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Personal Portfolio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="./images/logo.jpg" alt="Your Image" class="log-image">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-container">
+            <h1>Eyob</h1>
+            <p>If you do it right, it will last forever.</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="./images/profile.jpg" alt="Your Image" class="profile-image">
+            <p>Hello! I'm Eyob, a passionate web developer. I specialize in creating interactive and responsive websites using modern web technologies.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js-square"></i> JavaScript</li>
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fab fa-python"></i> Python</li>
+        </ul>
+    </section>
+
+    <section id="skills-level">
+        <h2>Skills Level</h2>
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="progress-bar">
+                <div class="progress html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="progress-bar">
+                <div class="progress css"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">JavaScript</div>
+            <div class="progress-bar">
+                <div class="progress js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">React</div>
+            <div class="progress-bar">
+                <div class="progress react"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Python</div>
+            <div class="progress-bar">
+                <div class="progress python"></div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Portfolio</h3>
+            <img src="./images/project.jpeg" alt="Project Image">
+            <p>This project is a personal portfolio website created to showcase my skills, projects, and professional experience as a web developer. The website is designed with a modern, clean, and responsive 
+                layout, making it accessible and visually appealing on all devices.</p>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Download my resume: <a href="Resume (7).pdf" download>Resume.pdf</a></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: eyob.email@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2024 Eyob. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
